@@ -45,7 +45,6 @@ body {
 
 .fa-play {
     font-size: 34px;
-    color: #cdc2d0;
     color: rgba(130,130,130, .8);
 }
 .fa-forward {
@@ -54,8 +53,11 @@ body {
 }
 .fa-pause {
     font-size: 34px;
-    color: #cdc2d0;
     color: rgba(130,130,130, .8);
+}
+.fa-volume-up {
+    color: rgba(130,130,130, .8);
+    font-size: 14px;
 }
 .back {
     transform: rotate(180deg);
@@ -79,7 +81,6 @@ body {
 .player__info.active {
     transform: translateY(-60px); opacity: 1;
     pointer-events: all;
-
 }
 
 .player__button {
