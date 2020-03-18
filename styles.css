@@ -1,0 +1,113 @@
+body {
+    background-color: #eec0c6;
+    background-image: linear-gradient(to left, #e58c8a 0%, #eec0c6 0%);;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+
+}
+
+.player__image {
+    height: 90px;
+    width:90px;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translateY(-40px);
+
+}
+.player {
+    width: 350px;
+    display: grid;
+    grid-template-columns: 90px 2fr;
+    grid-template-rows: 60px;
+    background-color: aliceblue;
+    padding: 10px 23px;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.9);
+    position: relative;
+}
+.player__controls {
+    margin-left: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fa-play {
+    font-size: 34px;
+    color: #cdc2d0;
+    color: rgba(130,130,130, .8);
+}
+.fa-forward {
+    font-size: 22px;
+    color: rgba(187,186,187, 1);
+}
+.fa-pause {
+    font-size: 34px;
+    color: #cdc2d0;
+    color: rgba(130,130,130, .8);
+}
+.back {
+    transform: rotate(180deg);
+}
+
+.player__info {
+    position: absolute;
+    background-color: aliceblue;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 50px);
+    transform: translateY(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .6s, opacity 1s ;
+    border-radius: 15px 15px 0 0;
+    padding: 5px;
+    box-shadow: 0 -2px 10px 0 rgba(252, 169, 169, 0.9);
+    z-index: -1;
+}
+.player__info.active {
+    transform: translateY(-60px); opacity: 1;
+    pointer-events: all;
+
+}
+
+.player__button {
+    background-color: transparent;
+    padding: 10px;
+    border: 0;
+}
+.player__button:focus {
+    outline: none;
+}
+.musicTitle {
+    font-size: 16px;
+    margin: 10px 5px 5px 5px;
+}
+.container {
+    margin-left: 90px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.progressBar {
+    height: 5px;
+    background-color: rgba(187,186,187, 1);
+    width: 100%;
+    margin: 5px 0 15px 0;
+    border-radius: 5px;
+}
+.hide {
+    display: none !important;
+}
