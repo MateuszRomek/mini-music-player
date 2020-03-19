@@ -15,9 +15,12 @@ const musicPlaylist = [
     {
         title: 'Jan-rapowanie & NOCNY - Thx',
         src: 'JanRapowanieThx.mp3',
+    },
+    {
+        title: 'Kendrick Lamar - Humble',
+        src: 'KendrickLamarHUMBLE.mp3',
     }
 ];
-
 
 function playMusic() {
     const [play, pause] = playButton.children;
@@ -61,6 +64,7 @@ function changeSong(e) {
     updateTitle(nextSong);
 
     audio.src = `./audio/${nextSong.src}`;
+    progressBar.style.width = '0px';
     audio.play();
 }
 
