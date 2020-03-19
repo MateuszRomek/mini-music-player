@@ -123,3 +123,12 @@ body {
     background-color: black;
 }
 
+@media (min-width: 315px) and (max-width: 767px) {
+    .player {
+        width: 250px;
+    }
+    .musicTitle {
+        font-size: 12px;
+    }
+}
+/* Need animation text for large titles */
